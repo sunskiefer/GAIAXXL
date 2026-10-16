@@ -55,7 +55,7 @@ envelopes, grey for modulation depths, black for the rest.
 ## Build
 
 ```
-./build.sh                 # -> build/package/ANDREALPHEUS - VST - GAIAXXL/
+./build.sh                 # -> build/package/L'Cronx - VST - GAIAXXL/
 test/run_tests.sh          # the engine test (x86, ASan/UBSan): every patch, wave, filter, effect, the arp, the randomizer
 test/host_test.sh          # mpc-vst-plugins' VST2 host test on the wrapper
 test/arm_sim.sh            # the engine test as ARM code, under qemu

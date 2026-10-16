@@ -48,7 +48,7 @@ jobs:
         run: |
           python3 third_party/mpc-vst-plugins/tools/release.py \
             --so build/arm/gaiaxxl.so \
-            --skin "build/package/ANDREALPHEUS - VST - GAIAXXL" \
+            --skin "build/package/L'Cronx - VST - GAIAXXL" \
             --entry build/pluginlist-entry.xml \
             --version "${{ steps.ver.outputs.version }}" \
             --about "GAIAXXL: a three-tone virtual-analog synth modelled on the Roland GAIA SH-01, for MPC OS" \

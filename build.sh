@@ -2,12 +2,12 @@
 # Build GAIAXXL for MPC OS (armv7-a hard-float, glibc <= 2.31 so it also loads on MPC OS 2.x).
 #   ./build.sh                     (MPC_VST=../mpc-vst-plugins to use another framework checkout)
 # Needs: python3 + Pillow and numpy, a host gcc (for shadow_art), and Zig (pip install ziglang). No Docker.
-# Output: build/package/ANDREALPHEUS - VST - GAIAXXL/  (skin + gaiaxxl.so)
+# Output: build/package/L'Cronx - VST - GAIAXXL/  (skin + gaiaxxl.so)
 set -euo pipefail
 cd "$(dirname "$0")"
 MPC_VST="${MPC_VST:-$PWD/third_party/mpc-vst-plugins}"
 ZIG="${ZIG:-python3 -m ziglang}"
-NAME="ANDREALPHEUS - VST - GAIAXXL"
+NAME="L'Cronx - VST - GAIAXXL"
 . ./build_srcs.sh
 python3 tools/gen_params.py --check
 python3 tools/skin.py --check
