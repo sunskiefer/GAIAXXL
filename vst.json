@@ -1,0 +1,18 @@
+{
+  "name": "GAIAXXL",
+  "vendor": "ANDREALPHEUS",
+  "uid": "GaXL",
+  "version": 1000,
+  "so": "gaiaxxl.so",
+  "params": "params.json",
+  "layout": "layout.conf",
+  "tile": "art/tile.png",
+  "programs": {"param": "patch"},
+  "cc": false,
+  "nrpn": false,
+  "defines": {
+    "HAS_HOST_TIME": 1,
+    "SAMPLE_ACCURATE": 1,
+    "PARAM_TEXT_MAX": 64
+  }
+}

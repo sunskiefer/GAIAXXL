@@ -1,0 +1,1970 @@
+{
+ "name": "GAIAXXL",
+ "params": [
+  {
+   "key": "t1_on",
+   "name": "T1 ON",
+   "default": 1,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t1_wave",
+   "name": "T1 WAVE",
+   "default": 0,
+   "options": [
+    "SAW",
+    "SQR",
+    "PW-SQR",
+    "TRI",
+    "SINE",
+    "NOISE",
+    "S-SAW"
+   ],
+   "min": 0,
+   "max": 6
+  },
+  {
+   "key": "t1_var",
+   "name": "T1 VARIATION",
+   "default": 0,
+   "options": [
+    "A",
+    "B",
+    "C"
+   ],
+   "min": 0,
+   "max": 2
+  },
+  {
+   "key": "t1_pitch",
+   "name": "T1 PITCH",
+   "default": 0,
+   "min": -24,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "t1_detune",
+   "name": "T1 DETUNE",
+   "default": 0,
+   "min": -50,
+   "max": 50,
+   "display": "int"
+  },
+  {
+   "key": "t1_pwm",
+   "name": "T1 PWM",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_pw",
+   "name": "T1 PW",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_pa",
+   "name": "T1 PITCH ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_pd",
+   "name": "T1 PITCH ENV D",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_pdepth",
+   "name": "T1 PITCH ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_fmode",
+   "name": "T1 FILTER MODE",
+   "default": 0,
+   "options": [
+    "LPF",
+    "HPF",
+    "BPF",
+    "PKG",
+    "BYPASS"
+   ],
+   "min": 0,
+   "max": 4
+  },
+  {
+   "key": "t1_slope",
+   "name": "T1 SLOPE",
+   "default": 1,
+   "options": [
+    "-12dB",
+    "-24dB"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t1_cutoff",
+   "name": "T1 CUTOFF",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_reso",
+   "name": "T1 RESONANCE",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_kf",
+   "name": "T1 KEY FOLLOW",
+   "default": 0,
+   "min": -100,
+   "max": 100,
+   "display": "int"
+  },
+  {
+   "key": "t1_fa",
+   "name": "T1 FILTER ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_fd",
+   "name": "T1 FILTER ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_fs",
+   "name": "T1 FILTER ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_fr",
+   "name": "T1 FILTER ENV R",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_fdepth",
+   "name": "T1 FILTER ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_fvelo",
+   "name": "T1 FILTER VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_level",
+   "name": "T1 LEVEL",
+   "default": 100,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_aa",
+   "name": "T1 AMP ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_ad",
+   "name": "T1 AMP ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_as",
+   "name": "T1 AMP ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_ar",
+   "name": "T1 AMP ENV R",
+   "default": 10,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_avelo",
+   "name": "T1 AMP VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_pan",
+   "name": "T1 PAN",
+   "default": 0,
+   "min": -64,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_lshape",
+   "name": "T1 LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t1_lrate",
+   "name": "T1 LFO RATE",
+   "default": 76,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_lsync",
+   "name": "T1 LFO TEMPO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t1_lnote",
+   "name": "T1 LFO SYNC NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t1_lfade",
+   "name": "T1 LFO FADE TIME",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_lkey",
+   "name": "T1 LFO KEY TRIG",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t1_lpitch",
+   "name": "T1 LFO PITCH DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_lfilter",
+   "name": "T1 LFO FILTER DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_lamp",
+   "name": "T1 LFO AMP DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_lpan",
+   "name": "T1 LFO PAN DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_mshape",
+   "name": "T1 MOD LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t1_mrate",
+   "name": "T1 MOD LFO RATE",
+   "default": 80,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t1_msync",
+   "name": "T1 MOD LFO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t1_mnote",
+   "name": "T1 MOD LFO NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t1_mpitch",
+   "name": "T1 MOD LFO PITCH",
+   "default": 10,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_mfilter",
+   "name": "T1 MOD LFO FILTER",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_mamp",
+   "name": "T1 MOD LFO AMP",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t1_mpan",
+   "name": "T1 MOD LFO PAN",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_on",
+   "name": "T2 ON",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t2_wave",
+   "name": "T2 WAVE",
+   "default": 0,
+   "options": [
+    "SAW",
+    "SQR",
+    "PW-SQR",
+    "TRI",
+    "SINE",
+    "NOISE",
+    "S-SAW"
+   ],
+   "min": 0,
+   "max": 6
+  },
+  {
+   "key": "t2_var",
+   "name": "T2 VARIATION",
+   "default": 0,
+   "options": [
+    "A",
+    "B",
+    "C"
+   ],
+   "min": 0,
+   "max": 2
+  },
+  {
+   "key": "t2_pitch",
+   "name": "T2 PITCH",
+   "default": 0,
+   "min": -24,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "t2_detune",
+   "name": "T2 DETUNE",
+   "default": 0,
+   "min": -50,
+   "max": 50,
+   "display": "int"
+  },
+  {
+   "key": "t2_pwm",
+   "name": "T2 PWM",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_pw",
+   "name": "T2 PW",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_pa",
+   "name": "T2 PITCH ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_pd",
+   "name": "T2 PITCH ENV D",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_pdepth",
+   "name": "T2 PITCH ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_fmode",
+   "name": "T2 FILTER MODE",
+   "default": 0,
+   "options": [
+    "LPF",
+    "HPF",
+    "BPF",
+    "PKG",
+    "BYPASS"
+   ],
+   "min": 0,
+   "max": 4
+  },
+  {
+   "key": "t2_slope",
+   "name": "T2 SLOPE",
+   "default": 1,
+   "options": [
+    "-12dB",
+    "-24dB"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t2_cutoff",
+   "name": "T2 CUTOFF",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_reso",
+   "name": "T2 RESONANCE",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_kf",
+   "name": "T2 KEY FOLLOW",
+   "default": 0,
+   "min": -100,
+   "max": 100,
+   "display": "int"
+  },
+  {
+   "key": "t2_fa",
+   "name": "T2 FILTER ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_fd",
+   "name": "T2 FILTER ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_fs",
+   "name": "T2 FILTER ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_fr",
+   "name": "T2 FILTER ENV R",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_fdepth",
+   "name": "T2 FILTER ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_fvelo",
+   "name": "T2 FILTER VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_level",
+   "name": "T2 LEVEL",
+   "default": 100,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_aa",
+   "name": "T2 AMP ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_ad",
+   "name": "T2 AMP ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_as",
+   "name": "T2 AMP ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_ar",
+   "name": "T2 AMP ENV R",
+   "default": 10,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_avelo",
+   "name": "T2 AMP VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_pan",
+   "name": "T2 PAN",
+   "default": 0,
+   "min": -64,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_lshape",
+   "name": "T2 LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t2_lrate",
+   "name": "T2 LFO RATE",
+   "default": 76,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_lsync",
+   "name": "T2 LFO TEMPO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t2_lnote",
+   "name": "T2 LFO SYNC NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t2_lfade",
+   "name": "T2 LFO FADE TIME",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_lkey",
+   "name": "T2 LFO KEY TRIG",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t2_lpitch",
+   "name": "T2 LFO PITCH DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_lfilter",
+   "name": "T2 LFO FILTER DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_lamp",
+   "name": "T2 LFO AMP DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_lpan",
+   "name": "T2 LFO PAN DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_mshape",
+   "name": "T2 MOD LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t2_mrate",
+   "name": "T2 MOD LFO RATE",
+   "default": 80,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t2_msync",
+   "name": "T2 MOD LFO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t2_mnote",
+   "name": "T2 MOD LFO NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t2_mpitch",
+   "name": "T2 MOD LFO PITCH",
+   "default": 10,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_mfilter",
+   "name": "T2 MOD LFO FILTER",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_mamp",
+   "name": "T2 MOD LFO AMP",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t2_mpan",
+   "name": "T2 MOD LFO PAN",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_on",
+   "name": "T3 ON",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t3_wave",
+   "name": "T3 WAVE",
+   "default": 0,
+   "options": [
+    "SAW",
+    "SQR",
+    "PW-SQR",
+    "TRI",
+    "SINE",
+    "NOISE",
+    "S-SAW"
+   ],
+   "min": 0,
+   "max": 6
+  },
+  {
+   "key": "t3_var",
+   "name": "T3 VARIATION",
+   "default": 0,
+   "options": [
+    "A",
+    "B",
+    "C"
+   ],
+   "min": 0,
+   "max": 2
+  },
+  {
+   "key": "t3_pitch",
+   "name": "T3 PITCH",
+   "default": 0,
+   "min": -24,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "t3_detune",
+   "name": "T3 DETUNE",
+   "default": 0,
+   "min": -50,
+   "max": 50,
+   "display": "int"
+  },
+  {
+   "key": "t3_pwm",
+   "name": "T3 PWM",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_pw",
+   "name": "T3 PW",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_pa",
+   "name": "T3 PITCH ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_pd",
+   "name": "T3 PITCH ENV D",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_pdepth",
+   "name": "T3 PITCH ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_fmode",
+   "name": "T3 FILTER MODE",
+   "default": 0,
+   "options": [
+    "LPF",
+    "HPF",
+    "BPF",
+    "PKG",
+    "BYPASS"
+   ],
+   "min": 0,
+   "max": 4
+  },
+  {
+   "key": "t3_slope",
+   "name": "T3 SLOPE",
+   "default": 1,
+   "options": [
+    "-12dB",
+    "-24dB"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t3_cutoff",
+   "name": "T3 CUTOFF",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_reso",
+   "name": "T3 RESONANCE",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_kf",
+   "name": "T3 KEY FOLLOW",
+   "default": 0,
+   "min": -100,
+   "max": 100,
+   "display": "int"
+  },
+  {
+   "key": "t3_fa",
+   "name": "T3 FILTER ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_fd",
+   "name": "T3 FILTER ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_fs",
+   "name": "T3 FILTER ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_fr",
+   "name": "T3 FILTER ENV R",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_fdepth",
+   "name": "T3 FILTER ENV DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_fvelo",
+   "name": "T3 FILTER VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_level",
+   "name": "T3 LEVEL",
+   "default": 100,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_aa",
+   "name": "T3 AMP ENV A",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_ad",
+   "name": "T3 AMP ENV D",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_as",
+   "name": "T3 AMP ENV S",
+   "default": 127,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_ar",
+   "name": "T3 AMP ENV R",
+   "default": 10,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_avelo",
+   "name": "T3 AMP VELO SENS",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_pan",
+   "name": "T3 PAN",
+   "default": 0,
+   "min": -64,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_lshape",
+   "name": "T3 LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t3_lrate",
+   "name": "T3 LFO RATE",
+   "default": 76,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_lsync",
+   "name": "T3 LFO TEMPO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t3_lnote",
+   "name": "T3 LFO SYNC NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t3_lfade",
+   "name": "T3 LFO FADE TIME",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_lkey",
+   "name": "T3 LFO KEY TRIG",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t3_lpitch",
+   "name": "T3 LFO PITCH DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_lfilter",
+   "name": "T3 LFO FILTER DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_lamp",
+   "name": "T3 LFO AMP DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_lpan",
+   "name": "T3 LFO PAN DEPTH",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_mshape",
+   "name": "T3 MOD LFO SHAPE",
+   "default": 0,
+   "options": [
+    "TRI",
+    "SIN",
+    "SAW",
+    "SQR",
+    "S&H",
+    "RND"
+   ],
+   "min": 0,
+   "max": 5
+  },
+  {
+   "key": "t3_mrate",
+   "name": "T3 MOD LFO RATE",
+   "default": 80,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "t3_msync",
+   "name": "T3 MOD LFO SYNC",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "t3_mnote",
+   "name": "T3 MOD LFO NOTE",
+   "default": 11,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "t3_mpitch",
+   "name": "T3 MOD LFO PITCH",
+   "default": 10,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_mfilter",
+   "name": "T3 MOD LFO FILTER",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_mamp",
+   "name": "T3 MOD LFO AMP",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "t3_mpan",
+   "name": "T3 MOD LFO PAN",
+   "default": 0,
+   "min": -63,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "level",
+   "name": "PATCH LEVEL",
+   "default": 100,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "mono",
+   "name": "MONO",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "porta",
+   "name": "PORTAMENTO",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "ptime",
+   "name": "PORTA TIME",
+   "default": 16,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "octave",
+   "name": "PATCH OCTAVE",
+   "default": 0,
+   "min": -3,
+   "max": 3,
+   "display": "int"
+  },
+  {
+   "key": "bend_up",
+   "name": "BEND RANGE UP",
+   "default": 2,
+   "min": 0,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "bend_dn",
+   "name": "BEND RANGE DOWN",
+   "default": 2,
+   "min": 0,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "mod",
+   "name": "TONE 1/2 MOD",
+   "default": 0,
+   "options": [
+    "OFF",
+    "SYNC",
+    "RING"
+   ],
+   "min": 0,
+   "max": 2
+  },
+  {
+   "key": "fx_on",
+   "name": "EFFECTS ON/OFF",
+   "default": 1,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "boost",
+   "name": "LOW BOOST",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "beam1_dest",
+   "name": "BEAM 1 ASSIGN",
+   "default": 12,
+   "options": [
+    "LFO RATE",
+    "LFO FADE",
+    "LFO PITCH",
+    "LFO FILTER",
+    "LFO AMP",
+    "OSC PITCH",
+    "OSC DETUNE",
+    "OSC PWM",
+    "OSC PW",
+    "PENV A",
+    "PENV D",
+    "PENV DEPTH",
+    "CUTOFF",
+    "RESONANCE",
+    "FENV A",
+    "FENV D",
+    "FENV S",
+    "FENV R",
+    "FENV DEPTH",
+    "AMP LEVEL",
+    "AENV A",
+    "AENV D",
+    "AENV S",
+    "AENV R",
+    "FX CTRL",
+    "PORTA TIME",
+    "BEND",
+    "MODULATION",
+    "CUTOFF KF",
+    "FX LEVEL"
+   ],
+   "min": 0,
+   "max": 29
+  },
+  {
+   "key": "beam1",
+   "name": "BEAM 1",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "beam2_dest",
+   "name": "BEAM 2 ASSIGN",
+   "default": 13,
+   "options": [
+    "LFO RATE",
+    "LFO FADE",
+    "LFO PITCH",
+    "LFO FILTER",
+    "LFO AMP",
+    "OSC PITCH",
+    "OSC DETUNE",
+    "OSC PWM",
+    "OSC PW",
+    "PENV A",
+    "PENV D",
+    "PENV DEPTH",
+    "CUTOFF",
+    "RESONANCE",
+    "FENV A",
+    "FENV D",
+    "FENV S",
+    "FENV R",
+    "FENV DEPTH",
+    "AMP LEVEL",
+    "AENV A",
+    "AENV D",
+    "AENV S",
+    "AENV R",
+    "FX CTRL",
+    "PORTA TIME",
+    "BEND",
+    "MODULATION",
+    "CUTOFF KF",
+    "FX LEVEL"
+   ],
+   "min": 0,
+   "max": 29
+  },
+  {
+   "key": "beam2",
+   "name": "BEAM 2",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dist_type",
+   "name": "DISTORTION",
+   "default": 0,
+   "options": [
+    "OFF",
+    "DIST",
+    "FUZZ",
+    "BIT CRASH"
+   ],
+   "min": 0,
+   "max": 3
+  },
+  {
+   "key": "dist_drive",
+   "name": "DIST DRIVE",
+   "default": 60,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dist_tone",
+   "name": "DIST TONE",
+   "default": 80,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dist_level",
+   "name": "DIST LEVEL",
+   "default": 90,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "flg_type",
+   "name": "FLANGER",
+   "default": 0,
+   "options": [
+    "OFF",
+    "FLANGER",
+    "PHASER",
+    "PITCH SHIFT"
+   ],
+   "min": 0,
+   "max": 3
+  },
+  {
+   "key": "flg_rate",
+   "name": "FLANGER RATE",
+   "default": 30,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "flg_depth",
+   "name": "FLANGER DEPTH",
+   "default": 70,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "flg_fb",
+   "name": "FLANGER FEEDBACK",
+   "default": 60,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "flg_pitch",
+   "name": "FLANGER MANUAL/PITCH",
+   "default": 0,
+   "min": -24,
+   "max": 24,
+   "display": "int"
+  },
+  {
+   "key": "flg_level",
+   "name": "FLANGER LEVEL",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dly_type",
+   "name": "DELAY",
+   "default": 0,
+   "options": [
+    "OFF",
+    "DELAY",
+    "PAN DELAY"
+   ],
+   "min": 0,
+   "max": 2
+  },
+  {
+   "key": "dly_sync",
+   "name": "DELAY TEMPO SYNC",
+   "default": 1,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "dly_time",
+   "name": "DELAY TIME",
+   "default": 60,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dly_note",
+   "name": "DELAY SYNC NOTE",
+   "default": 14,
+   "options": [
+    "16",
+    "12",
+    "8",
+    "4",
+    "2",
+    "1",
+    "3/4",
+    "2/3",
+    "1/2",
+    "3/8",
+    "1/3",
+    "1/4",
+    "3/16",
+    "1/6",
+    "1/8",
+    "3/32",
+    "1/12",
+    "1/16",
+    "1/24",
+    "1/32"
+   ],
+   "min": 0,
+   "max": 19
+  },
+  {
+   "key": "dly_fb",
+   "name": "DELAY FEEDBACK",
+   "default": 50,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dly_damp",
+   "name": "DELAY HIGH DAMP",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "dly_level",
+   "name": "DELAY LEVEL",
+   "default": 50,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "rev_type",
+   "name": "REVERB",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ROOM",
+    "HALL",
+    "PLATE"
+   ],
+   "min": 0,
+   "max": 3
+  },
+  {
+   "key": "rev_time",
+   "name": "REVERB TIME",
+   "default": 70,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "rev_damp",
+   "name": "REVERB HIGH DAMP",
+   "default": 64,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "rev_level",
+   "name": "REVERB LEVEL",
+   "default": 50,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "arp_on",
+   "name": "ARPEGGIO",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "arp_hold",
+   "name": "KEY HOLD",
+   "default": 0,
+   "options": [
+    "OFF",
+    "ON"
+   ],
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "arp_grid",
+   "name": "ARP GRID",
+   "default": 5,
+   "options": [
+    "4_",
+    "8_",
+    "8L",
+    "8H",
+    "8t",
+    "16_",
+    "16L",
+    "16H",
+    "16t"
+   ],
+   "min": 0,
+   "max": 8
+  },
+  {
+   "key": "arp_dur",
+   "name": "ARP DURATION",
+   "default": 4,
+   "options": [
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90",
+    "100",
+    "120",
+    "FUL"
+   ],
+   "min": 0,
+   "max": 9
+  },
+  {
+   "key": "arp_motif",
+   "name": "ARP MOTIF",
+   "default": 2,
+   "options": [
+    "UP/L",
+    "UP/L&H",
+    "UP",
+    "DOWN/L",
+    "DOWN/L&H",
+    "DOWN",
+    "UP&DN/L",
+    "UP&DN/L&H",
+    "UP&DN",
+    "RND/L",
+    "RND",
+    "PHRASE"
+   ],
+   "min": 0,
+   "max": 11
+  },
+  {
+   "key": "arp_oct",
+   "name": "ARP OCTAVE",
+   "default": 0,
+   "min": -3,
+   "max": 3,
+   "display": "int"
+  },
+  {
+   "key": "arp_accent",
+   "name": "ARP ACCENT",
+   "default": 50,
+   "min": 0,
+   "max": 100,
+   "display": "int"
+  },
+  {
+   "key": "arp_velo",
+   "name": "ARP VELOCITY",
+   "default": 0,
+   "min": 0,
+   "max": 127,
+   "display": "int"
+  },
+  {
+   "key": "patch",
+   "name": "PATCH",
+   "default": 0,
+   "min": 0,
+   "max": 63,
+   "display": "int"
+  },
+  {
+   "key": "patch_prev",
+   "name": "PATCH <",
+   "default": 0,
+   "min": 0,
+   "max": 1,
+   "momentary": true,
+   "step_of": "patch",
+   "step_delta": -1
+  },
+  {
+   "key": "patch_next",
+   "name": "PATCH >",
+   "default": 0,
+   "min": 0,
+   "max": 1,
+   "momentary": true,
+   "step_of": "patch",
+   "step_delta": 1
+  },
+  {
+   "key": "patch_name",
+   "name": "PATCH NAME",
+   "default": 0,
+   "min": 0,
+   "max": 0,
+   "display": "string"
+  },
+  {
+   "key": "oct_dn",
+   "name": "OCTAVE DOWN",
+   "default": 0,
+   "min": 0,
+   "max": 1,
+   "momentary": true,
+   "step_of": "octave",
+   "step_delta": -1
+  },
+  {
+   "key": "oct_up",
+   "name": "OCTAVE UP",
+   "default": 0,
+   "min": 0,
+   "max": 1,
+   "momentary": true,
+   "step_of": "octave",
+   "step_delta": 1
+  },
+  {
+   "key": "rnd_type",
+   "name": "RANDOM TYPE",
+   "default": 0,
+   "options": [
+    "PAD",
+    "LEAD",
+    "BASS",
+    "PLUCK",
+    "KEYS",
+    "BRASS",
+    "STRINGS",
+    "FX"
+   ],
+   "min": 0,
+   "max": 7
+  },
+  {
+   "key": "rnd_amt",
+   "name": "RANDOM AMOUNT",
+   "default": 100,
+   "min": 0,
+   "max": 100,
+   "display": "int"
+  },
+  {
+   "key": "rnd_go",
+   "name": "RANDOMIZE",
+   "default": 0,
+   "min": 0,
+   "max": 1,
+   "momentary": true
+  }
+ ]
+}
