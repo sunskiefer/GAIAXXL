@@ -1,4 +1,4 @@
-# GAIAXXL v0.1.0
+# GAIAXXL v0.1.2
 
 ![GAIAXXL, the TONE 1 page](docs/img/tone.png)
 

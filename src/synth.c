@@ -291,12 +291,23 @@ static inline float filter(ToneSt *s, int mode, int slope24, float g, float k, f
 {
     float b, h, l;
     if (mode == F_BYPASS) return x;
-    if (!slope24 || mode == F_PKG) {
+    if (mode == F_PKG) {
+        /* PKG: a peaking filter. The band-pass (unity at the cutoff) is added to the dry signal: gainPk is the boost
+         * (+6 dB at RESONANCE 0 up to +24 dB at 127), k the width (wide at 0, narrow at 127). -24 dB runs a second
+         * stage: the same peak, steeper skirts. */
+        l = svf(&s->s1[0], &s->s2[0], g, k, x, &b, &h);
+        x = x + b * k * s->gainPk;
+        if (slope24) {
+            l = svf(&s->s1[1], &s->s2[1], g, k * 1.6f, x, &b, &h);
+            x = x + b * k * 1.6f * s->gainPk * 0.35f;
+        }
+        return x;
+    }
+    if (!slope24) {
         l = svf(&s->s1[0], &s->s2[0], g, k, x, &b, &h);
         if (mode == F_LPF) return l;
         if (mode == F_HPF) return h;
-        if (mode == F_BPF) return b * k;
-        return x + b * k * s->gainPk;     /* PKG: a peak at the cutoff, RESONANCE its height */
+        return b * k;
     }
     {   /* -24 dB: two stages (Butterworth spacing), the resonance on the second */
         float b2, h2, x2;
@@ -375,8 +386,10 @@ void gaia_render(Gaia *g, float *L, float *R, int n)
                 {
                     const float r = EP(t, RESO) / 127.f;
                     kk[t] = 2.f - 1.97f * powf(r, 0.8f);
-                    s->gainPk = 0.3f + 3.2f * r;
-                    if (fm[t] == F_PKG) kk[t] = 1.4f - 0.9f * r;
+                    if (fm[t] == F_PKG) {   /* boost 2x (+6 dB) .. 15.8x (+24 dB), Q 0.8 .. 12 */
+                        s->gainPk = exp2f((6.f + 18.f * r) / 6.0206f) - 1.f;
+                        kk[t] = 1.f / (0.8f + 11.2f * r * sqrtf(r));
+                    }
                 }
                 /* amp */
                 avs = EP(t, AVELO) / 63.f;

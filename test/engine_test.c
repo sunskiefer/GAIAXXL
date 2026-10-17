@@ -133,6 +133,18 @@ int main(int argc, char **argv)
         CHECK(s.peak < 32767 && s.rms < 0.7, "filter mode %d", t);
     }
 
+    /* PKG is a real peak: around the cutoff it is far louder than BYPASS (a user found 0.1.x's PKG did next to nothing) */
+    {
+        Stat a, b;
+        sp(x, "patch", 0);
+        sp(x, "t1_fmode", 4);
+        note(x, 36, 100); a = run(x, 200, NULL); note(x, 36, 0); run(x, 400, NULL);
+        sp(x, "t1_fmode", 3); sp(x, "t1_cutoff", 40); sp(x, "t1_reso", 0); sp(x, "t1_slope", 0);   /* even at RESONANCE 0 */
+        note(x, 36, 100); b = run(x, 200, NULL); note(x, 36, 0); run(x, 400, NULL);
+        printf("  PKG: rms %.3f against BYPASS %.3f\n", b.rms, a.rms);
+        CHECK(b.rms > a.rms * 1.5, "PKG boosts too little (%.3f against %.3f)", b.rms, a.rms);
+    }
+
     /* tones 2 and 3, SYNC and RING */
     sp(x, "patch", 0);
     sp(x, "t2_on", 1); sp(x, "t3_on", 1); sp(x, "t2_pitch", 7);

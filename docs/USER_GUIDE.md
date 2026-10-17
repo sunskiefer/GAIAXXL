@@ -36,7 +36,7 @@ level).
 PWM (the LFO moving PW), PW (pulse width; on S-SAW the detune spread; on the KORG-bank variations the morph through
 the bank; on SINE C the FM index), and the pitch envelope ENV A, ENV D and DEPTH (±63 = ±3 octaves).
 
-**FILTER**: MODE (LPF, HPF, BPF, PKG = a peak at the cutoff whose height is RESONANCE, BYPASS), -12 / -24 dB,
+**FILTER**: MODE (LPF, HPF, BPF, PKG = a peak at the cutoff: RESONANCE sets its height, +6 to +24 dB, and how narrow it is; BYPASS), -12 / -24 dB,
 CUTOFF (16 Hz..19.5 kHz), RESONANCE (self-oscillates near the top), KEY FOLLOW (-100..+100 %: at 100 the cutoff
 follows the keyboard exactly), and the filter envelope A, D, S, R and DEPTH (±63 = ±8 octaves).
 
