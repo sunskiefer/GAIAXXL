@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3 (2026-10-22)
+- Built on the latest wrapper and includes the Q-Link and automation fix (mpc-vst-plugins #486-#489): Q-Links now
+  move this plugin's parameters on the track's automation screen (MPC no longer rebuilds its parameter screen on every
+  write, at most one refresh per 50 ms), and the build keeps every parameter's index fixed (`params.lock`), so saved
+  projects, automation and Q-Link maps stay on the right parameters in later versions. Nothing else changed.
+- Packaged with the fixed L'Cronx release tools (the ' in the plugin folder name is escaped in install.sh and
+  uninstall.sh, and the catalog check no longer flags it). Installs over 0.1.2 in place: no need to uninstall first.
+
 ## 0.1.2 (2026-10-17)
 PKG filter fixed: it is now a real peaking filter. RESONANCE sets how much it boosts the cutoff (+6 dB at 0 up to
 +24 dB at 127) and how narrow the peak is; -24 dB adds a second stage for steeper skirts. In 0.1.0 and 0.1.1 the boost
